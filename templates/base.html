@@ -1,0 +1,15 @@
+{% load i18n %}
+<html>
+  {% load static %}
+  <head>
+      <meta http-equiv="Content-Security-Policy" content="default-src 'self'">
+      <link rel="stylesheet" href="{% static "css/bootstrap-4.0.0.min.css" %}">
+      <title>{% trans 'local commerce' %}</title>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <h1 class="text-center">{% trans 'local commerce' %}</h1>
+      {% block page_content %}{% endblock %}
+    </div>
+  </body>
+</html>

@@ -1,0 +1,68 @@
+{% extends "base.html" %}
+{% load i18n %}
+{#% load debug %#}
+{% block page_content %}
+  <div class="row">
+    <div class="card m-3">
+      <div class="card-header text-center text-uppercase">
+        {% trans "lists of products" %}
+      </div>
+        <div class="card-body p-3">
+          <table id="table-products" class="table table-responsive">
+            <thead>
+              <tr>
+                <th title="{% trans 'name' %}">
+                  {% trans "name" %}
+                </th>
+                <th title="{% trans 'category' %}">
+                  {% trans "category" %}
+                </th>
+                <th title="{% trans 'varieties' %}">
+                  {% trans "varieties" %}
+                </th>
+                <th title="{% trans 'aspects' %}">
+                  {% trans "aspects" %}
+                </th>
+                <th title="{% trans 'packagings' %}">
+                  {% trans "packagings" %}
+                </th>
+                <th title="{% trans 'sizes' %}">
+                  {% trans "sizes" %}
+                </th>
+                <th title="{% trans 'calibers' %}">
+                  {% trans "calibers" %}
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              {% for product in products %}
+                {#% pdb %#}
+                <tr>
+                  <td class="text-truncate" title="{{ product.name }}">
+                    {{ product.name }}
+                  </td>
+                  <td class="text-truncate" title="{{ product.category }}">
+                    {{ product.category }}
+                  </td>
+                  <td class="text-truncate" title="{{ product.varieties }}">
+                    {{ product.varieties }}
+                  </td>
+                    <td class="text-truncate" title="{{ product.aspects }}">
+                    {{ product.aspects }}
+                  </td>
+                  <td class="text-truncate" title="{{ product.packagings }}">
+                    {{ product.packagings }}
+                  </td>
+                  <td class="text-truncate" title="{{ product.sizes }}">
+                    {{ product.sizes }}
+                  </td>
+                  <td class="text-truncate" title="{{ product.calibers }}">
+                    {{ product.calibers }}
+                  </td>
+                </tr>
+              {% endfor  %}
+            </tbody>
+          </table>
+        </div>
+      </div>
+{% endblock %}
