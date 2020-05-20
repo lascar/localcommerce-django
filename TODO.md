@@ -4,11 +4,11 @@
 
 ## [SCRATCHPAD](SCRATCHPAD.md)
 
-* user role as admin, seller and buyer
+* user role as admin and user
 
-* seller can mark a product as product of interest
+* user can mark a product of interest (array of only name)
 
-* seller can make offers (on his products of interest)
+* user can make offers (on his products of interest)
 
 * * within each offer there is
 
@@ -22,11 +22,9 @@
 
 * * * possibility of delivery and an average of the additional cost for delivery
 
-* seller can see his offers and the customer's orders on his offers
+* user can see his offers and the orders on his offers
 
-* buyer can mark a product as product of interest
-
-* seller can make orders (on his products of interest) based on existing offers
+* user can make orders (on his products of interest) based on existing offers
 
 * * within each order there is
 
