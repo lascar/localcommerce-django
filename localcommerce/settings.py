@@ -41,8 +41,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    # uncomment once app product is created
+    'django_extensions',
     'products',
+    'users',
 ]
 
 MIDDLEWARE = [
@@ -160,3 +161,6 @@ LOGGING = {
         },
     },
 }
+AUTH_USER_MODEL = 'users.CustomUser'
+LOGIN_REDIRECT_URL = 'products_index'
+LOGOUT_REDIRECT_URL = 'products_index'

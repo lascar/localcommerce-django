@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-19 11:14+0200\n"
+"POT-Creation-Date: 2020-05-20 15:25+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,15 +18,15 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: localcommerce/settings.py:119
+#: localcommerce/settings.py:120
 msgid "English"
 msgstr "Inglés"
 
-#: localcommerce/settings.py:120
+#: localcommerce/settings.py:121
 msgid "French"
 msgstr "Francés"
 
-#: localcommerce/settings.py:121
+#: localcommerce/settings.py:122
 msgid "Spanish"
 msgstr "Español"
 
@@ -44,7 +44,7 @@ msgstr "nombre"
 
 #: products/templates/index.html:17 products/templates/index.html:18
 msgid "category"
-msgstr "categorias"
+msgstr "categoria"
 
 #: products/templates/index.html:20 products/templates/index.html:21
 msgid "varieties"
@@ -64,12 +64,143 @@ msgstr "tallas"
 
 #: products/templates/index.html:32 products/templates/index.html:33
 msgid "calibers"
-msgstr "calibre"
+msgstr "calibres"
 
-#: templates/base.html:7 templates/base.html:16
+#: templates/base.html:7 templates/base.html:38
 msgid "local commerce"
 msgstr "comercio local"
 
-#: templates/base.html:13
+#: templates/base.html:18
+msgid "Hi"
+msgstr "Hola"
+
+#: templates/base.html:21
+msgid "Log Out"
+msgstr "Salir"
+
+#: templates/base.html:25
+msgid "You are not logged in"
+msgstr "No esta autentificado"
+
+#: templates/base.html:28
 msgid "Log In"
 msgstr "Autentificarse"
+
+#: templates/base.html:31
+msgid "Sign Up"
+msgstr "Registrarse"
+
+#: templates/registration/login.html:4
+msgid "Login"
+msgstr "Autentificarse"
+
+#: templates/registration/login.html:9
+msgid "login"
+msgstr "autentificarse"
+
+#: users/admin.py:19
+msgid "Personal data"
+msgstr "Datos personales"
+
+#: users/admin.py:23
+msgid "Permissions"
+msgstr "Permisiones"
+
+#: users/forms.py:12
+msgid "The two password fields didn't match."
+msgstr "Las dos contraseñas no coinciden"
+
+#: users/forms.py:14 users/forms.py:39
+msgid "Password"
+msgstr "Contraseña"
+
+#: users/forms.py:15
+msgid "Password confirmation"
+msgstr "Confirmación de la contraseña"
+
+#: users/forms.py:16
+msgid "Enter the same password as above, for verification."
+msgstr "Teclear la misma contraseña que arriba"
+
+#: users/forms.py:40
+msgid ""
+"Raw passwords are not stored, so there is no way to see this user's "
+"password, but you can change the password using <a href=\"password/\">this "
+"form</a>."
+msgstr ""
+
+#: users/managers.py:14
+msgid "The Email must be set"
+msgstr "El correo electrónico tiene que estar puesto"
+
+#: users/managers.py:30
+msgid "Superuser must have is_staff=True."
+msgstr "El superusuario tiene que tener is_staff=True"
+
+#: users/managers.py:32
+msgid "Superuser must have is_superuser=True."
+msgstr "El superusuario tiene que tener is_superuser=True"
+
+#: users/models.py:12
+#, fuzzy
+#| msgid "name"
+msgid "username"
+msgstr "nombre de usuario"
+
+#: users/models.py:13
+msgid "email address"
+msgstr "correo electrónico"
+
+#: users/models.py:14
+msgid "first_name"
+msgstr "nombre"
+
+#: users/models.py:15
+#, fuzzy
+#| msgid "name"
+msgid "last_name"
+msgstr "apelido"
+
+#: users/models.py:16
+msgid "dirrection"
+msgstr "dirrección"
+
+#: users/models.py:17
+msgid "dirrection2"
+msgstr "segunda dirrección"
+
+#: users/models.py:18
+msgid "town"
+msgstr "ciudad"
+
+#: users/models.py:19
+msgid "zipcode"
+msgstr "código postal"
+
+#: users/models.py:20
+msgid "state"
+msgstr "provincia"
+
+#: users/models.py:21
+msgid "country"
+msgstr "país"
+
+#: users/models.py:21
+msgid "spain"
+msgstr "España"
+
+#: users/models.py:22
+msgid "telephone1"
+msgstr "telefono"
+
+#: users/models.py:23
+msgid "telephone2"
+msgstr "otro telefono"
+
+#: users/models.py:34
+msgid "User"
+msgstr "Usuario"
+
+#: users/models.py:35
+msgid "Users"
+msgstr "Usuarios"

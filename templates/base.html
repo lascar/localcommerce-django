@@ -7,6 +7,32 @@
       <title>{% trans 'local commerce' %}</title>
   </head>
   <body>
+    <nav class="navbar navbar-default navbar-expand-sm bg-light">
+      <div class="container-fluid">
+        <div class="logo_wrapper">
+          <a href="#">logo
+          </a>
+        </div>
+        <ul class="nav nav-pills pull-right">
+            {% if user.is_authenticated %}
+              <span id="greeting">{% trans 'Hi' %} {{ user.email }}!</span>
+              &nbsp;
+              <li>
+                <a href="{% url 'logout' %}">{% trans 'Log Out' %}</a>
+              </li>
+            {% else %}
+              <span id="greeting">{% trans 'You are not logged in' %}!</span>
+              &nbsp;
+              <li>
+                <a href="{% url 'login' %}">{% trans 'Log In' %}</a> |
+              </li>
+              <li>
+                <a href="{#% url 'account_signup' %#}">{% trans 'Sign Up' %}</a>
+              </li>
+            {% endif %}
+        </ul>
+      </div>
+    </nav>
     <div class="container-fluid">
       <h1 class="text-center">{% trans 'local commerce' %}</h1>
       {% block page_content %}{% endblock %}
