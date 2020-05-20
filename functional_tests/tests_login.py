@@ -1,4 +1,5 @@
 import pdb
+from django.test import tag
 from django.contrib.staticfiles.testing import StaticLiveServerTestCase
 from selenium.webdriver.firefox.webdriver import WebDriver
 from selenium.webdriver.common.keys import Keys
@@ -21,6 +22,7 @@ class LoginTest(StaticLiveServerTestCase):
     def setUp(self):
         CustomUser.objects.create_user('test@example.com', 'password')
 
+    @tag('selenium')
     def test_user_login_with_email(self):
         with translation.override('es'):
             self.selenium.get('%s%s' % (self.live_server_url, '/'))

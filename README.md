@@ -23,7 +23,7 @@ python manage.py test functional_tests
 
 and the unit test through:
 <code>
-python manage.py test product.tests
+python manage.py test --exclude-tag=selenium
 </code>
 
 ## [BAD_SMELL](BAD_SMELL.md)

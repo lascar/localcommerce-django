@@ -1,4 +1,5 @@
 import pdb
+from django.test import tag
 from django.contrib.staticfiles.testing import StaticLiveServerTestCase
 from selenium.webdriver.firefox.webdriver import WebDriver
 from django.utils import translation
@@ -16,6 +17,7 @@ class RootTest(StaticLiveServerTestCase):
         cls.selenium.quit()
         super().tearDownClass()
 
+    @tag('selenium')
     def test_root(self):
         with translation.override('es'):
             self.selenium.get('%s%s' % (self.live_server_url, '/'))
