@@ -4,7 +4,6 @@ from django.contrib.staticfiles.testing import StaticLiveServerTestCase
 from selenium.webdriver.firefox.webdriver import WebDriver
 from selenium.webdriver.common.keys import Keys
 from django.utils import translation
-from django.conf import settings
 from users.models import CustomUser
 
 class LoginTest(StaticLiveServerTestCase):

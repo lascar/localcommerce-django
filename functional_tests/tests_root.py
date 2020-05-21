@@ -3,7 +3,6 @@ from django.test import tag
 from django.contrib.staticfiles.testing import StaticLiveServerTestCase
 from selenium.webdriver.firefox.webdriver import WebDriver
 from django.utils import translation
-from django.conf import settings
 
 class RootTest(StaticLiveServerTestCase):
     @classmethod
