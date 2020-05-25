@@ -6,6 +6,3 @@ class ProductManager(models.Manager):
 
     def active(self):
         return self.filter(active=True)
-
-    def category(self, category):
-        return self.filter(category=category)

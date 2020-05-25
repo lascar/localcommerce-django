@@ -20,8 +20,7 @@ def __make_product(product):
     packagings_string = ', '.join(product.packagings)
     sizes_string = ', '.join(product.sizes)
     calibers_string = ', '.join(product.calibers)
-    return {'name': product.name, 'category': product.category,
-            'varieties': varieties_string, 'aspects': aspects_string,
-            'packagings': packagings_string, 'sizes': sizes_string,
-            'calibers': calibers_string}
+    return {'name': product.name, 'varieties': varieties_string,
+            'aspects': aspects_string, 'packagings': packagings_string,
+            'sizes': sizes_string, 'calibers': calibers_string}
 

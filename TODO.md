@@ -6,7 +6,18 @@
 
 * user role as admin and user
 
-* user can mark a product of interest (array of only name)
+* user can mark a product of interest
+Products of interest will be a relation many to many.
+
+Real products are products with one variety (or none), one aspect (or none)...
+ defined.
+Theys are used in offers and orders.
+Offers and Orders have a relation many to one with them.
+
+After defined offer and order, we will defined products of interest (so offer
+ and order have no filter restriction at this point (a user see all without
+ filtering his interests).
+
 
 * user can make offers (on his products of interest)
 

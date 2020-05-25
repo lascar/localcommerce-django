@@ -6,7 +6,6 @@ from django.utils.translation import ugettext_lazy as _
 class Product(models.Model):
     active = models.BooleanField(default=True)
     name = models.CharField(max_length=150)
-    category = models.CharField(max_length=150)
     varieties = ArrayField(
                     models.CharField(max_length=20, blank=True, default=''),
                     default=list, blank=True
@@ -36,7 +35,7 @@ class Product(models.Model):
     class Meta:
         verbose_name_plural = _('Products')
         constraints = [
-            models.UniqueConstraint(fields=['name', 'category'], name='unique_by_category'),
+            models.UniqueConstraint(fields=['name'], name='unique_by_name'),
         ]
 
     def __str__(self):
