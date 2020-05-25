@@ -6,13 +6,13 @@ from .managers import RealProductManager
 from products.models import Product
 from django.utils.translation import ugettext_lazy as _
 class RealProduct(models.Model):
-    name = models.CharField(max_length=150)
+    name = models.CharField(max_length=150, blank=True)
     product = models.ForeignKey(to=Product, on_delete=models.CASCADE)
-    variety = models.CharField(max_length=150)
-    aspect = models.CharField(max_length=150)
-    packaging = models.CharField(max_length=150)
-    size = models.CharField(max_length=150)
-    caliber = models.CharField(max_length=150)
+    variety = models.CharField(max_length=150, blank=True)
+    aspect = models.CharField(max_length=150, blank=True)
+    packaging = models.CharField(max_length=150, blank=True)
+    size = models.CharField(max_length=150, blank=True)
+    caliber = models.CharField(max_length=150, blank=True)
 
 
     objects = models.Manager()
