@@ -1,5 +1,4 @@
 import pdb
-from django.contrib.postgres.fields import JSONField
 from django.db.models.signals import pre_save
 from django.db import models
 from .managers import RealProductManager
