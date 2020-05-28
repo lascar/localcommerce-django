@@ -20,7 +20,7 @@ class ProductModelTest(TestCase):
     def tearDown(self):
         pass
 
-    def test_return_list_available_product(self):
+    def test_product_create(self):
         self.assertEquals(self.product1.name, 'product1')
         self.assertTrue(self.product1.active)
         self.assertEquals(self.product1.varieties, ['variety1', 'variety2'])

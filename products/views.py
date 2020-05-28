@@ -2,9 +2,6 @@ import pdb
 from django.shortcuts import render
 from .models import Product
 
-import pdb
-
-
 def index(request):
     # pdb.set_trace()
     context = {'products': __make_products(Product.browser.active())}
