@@ -1,0 +1,12 @@
+.card-detail{
+  min-width: 50%;
+}
+li.success{
+  color: green;
+}
+li.error{
+  color: red;
+}
+li.info{
+  color: blue;
+}
