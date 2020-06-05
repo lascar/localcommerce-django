@@ -23,7 +23,9 @@ After defined offer and order, we will defined products of interest (so offer
 
 * * within each offer there is
 
-* * * concrete products (with variety, aspect...)
+* * * offer_lines with each 
+
+* * * * concrete products (with variety, aspect...)
 
 * * * * quantity available
 
@@ -33,15 +35,17 @@ After defined offer and order, we will defined products of interest (so offer
 
 * * * possibility of delivery and an average of the additional cost for delivery
 
+* user can see offers and orders (we have to determine the way to filter)
+
 * user can see his offers and the orders on his offers
 
-* user can make orders (on his products of interest) based on existing offers
+* user can make orders based on existing offers
 
 * * within each order there is
 
 * * * the identifier of the offer referenced
 
-* * * the concerned concrete products (with variety, aspect...) of the offer
+* * * the concerned offer_line (with variety, aspect...) of the offer with
 
 * * * * the required quantity
 

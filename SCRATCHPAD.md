@@ -1,5 +1,7 @@
 # Scratchpad for quick notes
+Offer had offer_lines and each offer_line has a real_product
 
+I'm not sure of this...
 the user's products_of_interest field is a many to many. A user has a many to
  many relationship with the products. A cache must maintain a dictionary with
  categories as keys and product'names as values. Redis is a good candidate
