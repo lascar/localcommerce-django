@@ -1,11 +1,17 @@
 # Scratchpad for quick notes
-Offer had offer_lines and each offer_line has a real_product
+Idealy Offer would be a composite that holds other offers (component)
+ or the fields an offer (leaf).
+Offer had a user a location auto (come from user or from itself), product,
+ quantity, price...
+
+Location are given by postal code (see tools_box)
+But for now, Location are in the freeze.
 
 I'm not sure of this...
 the user's products_of_interest field is a many to many. A user has a many to
- many relationship with the products. A cache must maintain a dictionary with
- categories as keys and product'names as values. Redis is a good candidate
- for this.
+ many relationship with the products. The UserProduct model has a email boolean.
+ A cache must maintain a dictionary with categories as keys and product'names
+ as values. Redis is a good candidate for this.
 
 +Write on the many to many and rebuid the cache, read on the cache.
 +how to display it in admin?

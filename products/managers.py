@@ -1,8 +1,8 @@
 from django.db import models
 
 class ProductManager(models.Manager):
-    def non_active(self):
-        return self.filter(active=False)
+    def non_valid(self):
+        return self.filter(valid=False)
 
-    def active(self):
-        return self.filter(active=True)
+    def valid(self):
+        return self.filter(valid=True)

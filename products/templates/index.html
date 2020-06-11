@@ -14,20 +14,8 @@
                 <th title="{% trans 'name' %}">
                   {% trans "name" %}
                 </th>
-                <th title="{% trans 'varieties' %}">
-                  {% trans "varieties" %}
-                </th>
-                <th title="{% trans 'aspects' %}">
-                  {% trans "aspects" %}
-                </th>
-                <th title="{% trans 'packagings' %}">
-                  {% trans "packagings" %}
-                </th>
-                <th title="{% trans 'sizes' %}">
-                  {% trans "sizes" %}
-                </th>
-                <th title="{% trans 'calibers' %}">
-                  {% trans "calibers" %}
+                <th title="{% trans 'variety' %}">
+                  {% trans "variety" %}
                 </th>
               </tr>
             </thead>
@@ -37,20 +25,8 @@
                   <td class="text-truncate" title="{{ product.name }}">
                     {{ product.name }}
                   </td>
-                  <td class="text-truncate" title="{{ product.varieties }}">
-                    {{ product.varieties }}
-                  </td>
-                    <td class="text-truncate" title="{{ product.aspects }}">
-                    {{ product.aspects }}
-                  </td>
-                  <td class="text-truncate" title="{{ product.packagings }}">
-                    {{ product.packagings }}
-                  </td>
-                  <td class="text-truncate" title="{{ product.sizes }}">
-                    {{ product.sizes }}
-                  </td>
-                  <td class="text-truncate" title="{{ product.calibers }}">
-                    {{ product.calibers }}
+                  <td class="text-truncate" title="{{ product.variety }}">
+                    {{ product.variety }}
                   </td>
                 </tr>
               {% endfor  %}

@@ -14,6 +14,11 @@
           <a href="#">logo
           </a>
         </div>
+        <ul class="nav nav-pills pull-center">
+            <li>
+              <a href="{#% url 'offers_index' %#}">{% trans 'Oferts' %}</a>
+            </li>
+        </ul>
         <ul class="nav nav-pills pull-right">
             {% if user.is_authenticated %}
               <span id="greeting">{% trans 'Hi' %} {{ user.email }}!</span>

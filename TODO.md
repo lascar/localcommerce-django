@@ -8,34 +8,34 @@
 
 * user can mark a product of interest
 Products of interest will be a relation many to many.
-
-Real products are products with one variety (or none), one aspect (or none)...
- defined.
-Theys are used in offers and orders.
-Offers and Orders have a relation many to one with them.
-
-After defined offer and order, we will defined products of interest (so offer
- and order have no filter restriction at this point (a user see all without
- filtering his interests).
-
+The UserProduct model has a boolean 'mailling' for warning the user when
+ an offer is made nearby on that product
 
 * user can make offers (on his products of interest)
 
-* * within each offer there is
+* * within each offer can be included
 
-* * * offer_lines with each 
+* * *  other offers (as component)
 
-* * * * concrete products (with variety, aspect...)
+* * and can be (as leaf)
+
+* * * a product (with variety, observation...)
 
 * * * * quantity available
 
 * * * * unit price on site (with and without vat)
 
-* * * * date of start, date of end
+* * * * date of start (defaut today)
+
+* * * * date of end (is not precised and valid True defaulted at today + one day)
 
 * * * possibility of delivery and an average of the additional cost for delivery
 
-* user can see offers and orders (we have to determine the way to filter)
+* user can see offers (based on his products of interest)
+
+* user can see his orders
+
+* user can see orders on his offers
 
 * user can see his offers and the orders on his offers
 
