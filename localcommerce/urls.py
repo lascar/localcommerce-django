@@ -21,4 +21,6 @@ urlpatterns = [
     path('gestion/', admin.site.urls),
     path('accounts/', include('django.contrib.auth.urls')),
     path('products/', include('products.urls')),
+    path('concrete_products/', include('concrete_products.urls')),
+    path('offers/', include('offers.urls')),
 ]

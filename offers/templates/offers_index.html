@@ -1,0 +1,103 @@
+{% extends "base.html" %}
+{% load i18n admin_modify adminmedia %}
+{% block extrahead %}{{ block.super }}
+<link rel="stylesheet" type="text/css" href="{% admin_media_prefix %}css/base.css" />
+<link rel="stylesheet" type="text/css" href="{% admin_media_prefix %}css/widgets.css" />
+<script type="text/javascript" src="/jsi18n/"></script>
+<script type="text/javascript" src="{% admin_media_prefix %}js/core.js"></script>
+{{ form.media }}
+{% endblock %}
+{% load i18n %}
+{#% load debug %#}
+{% block page_content %}
+  <div class="row">
+    <div class="card m-3">
+      <div class="card-header text-center text-uppercase">
+        {% trans "list of offers" %}
+      </div>
+      <div class="card-body p-3">
+        <table id="table-products" class="table table-responsive">
+          <thead>
+            <tr>
+              <th title="{% trans 'product name' %}">
+                {% trans "product name" %}
+              </th>
+              <th title="{% trans "user email" %}">
+                {% trans "user email" %}
+              </th>
+              <th title="{% trans 'unit quantity' %}">
+                {% trans "unit quantity" %}
+              </th>
+              <th title="{% trans 'unit price' %}">
+                {% trans "unit price" %}
+              </th>
+              <th title="{% trans 'date start' %}">
+                {% trans "date start" %}
+              </th>
+              <th title="{% trans 'date end' %}">
+                {% trans "date end" %}
+              </th>
+              <th colspan="1"></th>
+            </tr>
+          </thead>
+          <tbody>
+            {% for offer in offers %}
+              <tr>
+                <td class="text-truncate" title="{{ offer.product_name }}">
+                  {{ offer.product_name }}
+                </td>
+                <td class="text-truncate" title="{{ offer.user_email }}">
+                  {{ offer.user_email }}
+                </td>
+                  <td class="text-truncate" title="{{ offer.unit_quantity }}">
+                  {{ offer.unit_quantity }}
+                </td>
+                <td class="text-truncate" title="{{ offer.unit_price }}">
+                  {{ offer.unit_price }}
+                </td>
+                <td class="text-truncate" title="{{ offer.date_start }}">
+                  {{ offer.date_start }}
+                </td>
+                <td class="text-truncate" title="{{ offer.date_end }}">
+                  {{ offer.date_end }}
+                </td>
+                <td>
+                  <a href="{% url 'offer_detail' offer.id %}" title="{% trans 'detail' %}">
+                    {% trans 'detail' %}
+                  </a>
+                </td>
+              </tr>
+            {% endfor  %}
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="card m-3">
+      <div class="card-header text-center text-uppercase">
+        {% trans "new offer" %}
+      </div>
+      <div class="card-body p-3">
+        <form id="new_offer_form" method="post" action="offer_create">
+          {% csrf_token %}
+            {% for field in form.visible_fields %}
+              <div class="row m-2">
+                <div class="col-2">
+                  {{ field.label }}
+                </div>
+                <div class="col-2">
+                  {{ field }}
+                </div>
+                <div class="col-2">
+                  {{ field.errors }}
+                  {{ field.help_text }}
+                </div>
+              </div>
+            {% endfor %}
+          <input type="submit" name="submit" value="{% trans 'new offer' %}">
+      </form>
+      </div>
+    </div>
+  </div>
+{% endblock %}

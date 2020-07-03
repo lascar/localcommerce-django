@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-20 15:25+0200\n"
+"POT-Creation-Date: 2020-07-03 15:12+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,19 +18,215 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: localcommerce/settings.py:120
+#: concrete_products/forms.py:15
+msgid "Name"
+msgstr "Nombre"
+
+#: concrete_products/forms.py:16 products/models.py:38
+msgid "Product"
+msgstr "Producto"
+
+#: concrete_products/forms.py:17
+msgid "Brand"
+msgstr "Marca"
+
+#: concrete_products/forms.py:18
+msgid "Variety"
+msgstr "Variedad"
+
+#: concrete_products/forms.py:19
+msgid "Aspect"
+msgstr "Aspecto"
+
+#: concrete_products/forms.py:20
+msgid "Packaging"
+msgstr "acondicionamiento"
+
+#: concrete_products/forms.py:21
+msgid "Size"
+msgstr "Tamaño"
+
+#: concrete_products/forms.py:22
+msgid "Caliber"
+msgstr "calibre"
+
+#: concrete_products/models.py:21
+msgid "Concrete Product"
+msgstr "Producto concreto"
+
+#: concrete_products/models.py:22
+msgid "Concrete Products"
+msgstr "Productos concretos"
+
+#: concrete_products/models.py:34 concrete_products/models.py:35
+#: concrete_products/models.py:36 concrete_products/models.py:37
+#: concrete_products/models.py:38 concrete_products/models.py:39
+#: concrete_products/tests/test_models.py:33
+#: concrete_products/tests/test_models.py:39
+#: concrete_products/tests/test_models.py:42
+#: concrete_products/tests/test_models.py:45
+msgid "not precised"
+msgstr "no especificado"
+
+#: localcommerce/settings.py:122
 msgid "English"
 msgstr "Inglés"
 
-#: localcommerce/settings.py:121
+#: localcommerce/settings.py:123
 msgid "French"
 msgstr "Francés"
 
-#: localcommerce/settings.py:122
+#: localcommerce/settings.py:124
 msgid "Spanish"
 msgstr "Español"
 
-#: products/models.py:37
+#: offers/forms.py:12
+msgid "jan"
+msgstr "ene"
+
+#: offers/forms.py:12
+msgid "feb"
+msgstr "feb"
+
+#: offers/forms.py:12
+msgid "mar"
+msgstr "mar"
+
+#: offers/forms.py:12
+msgid "apr"
+msgstr "abr"
+
+#: offers/forms.py:13
+msgid "may"
+msgstr "may"
+
+#: offers/forms.py:13
+msgid "jun"
+msgstr "jun"
+
+#: offers/forms.py:13
+msgid "jul"
+msgstr "jul"
+
+#: offers/forms.py:13
+msgid "aug"
+msgstr "aug"
+
+#: offers/forms.py:14
+msgid "sep"
+msgstr "sie"
+
+#: offers/forms.py:14
+msgid "oct"
+msgstr "oct"
+
+#: offers/forms.py:14
+msgid "nov"
+msgstr "nov"
+
+#: offers/forms.py:14
+msgid "dec"
+msgstr "dic"
+
+#: offers/forms.py:22
+msgid "Invalid date - start in past"
+msgstr "Fecha invalida - empieza en el pasado"
+
+#: offers/forms.py:29
+msgid "Invalid date - end must be greater than start"
+msgstr "Fecha invalida - el fín tiene que ser más grande que el principio"
+
+#: offers/forms.py:37
+msgid "Concrete product"
+msgstr "Producto Concreto"
+
+#: offers/forms.py:38 users/models.py:34
+msgid "User"
+msgstr "Usuario"
+
+#: offers/forms.py:39
+msgid "Unit quantity"
+msgstr "Quantity de unidad"
+
+#: offers/forms.py:40
+msgid "Unit price"
+msgstr "Precio de la unidad"
+
+#: offers/forms.py:41
+msgid "Date start"
+msgstr "Fecha de comienzo"
+
+#: offers/forms.py:42
+msgid "Date end"
+msgstr "Fecha de finalización"
+
+#: offers/models.py:15
+msgid "quantity"
+msgstr "cantidad"
+
+#: offers/models.py:42
+msgid "Offer"
+msgstr "Oferta"
+
+#: offers/models.py:43
+msgid "Offers"
+msgstr "Ofertas"
+
+#: offers/templates/offer_detail.html:8
+msgid "detail view for offer"
+msgstr "detalle de la oferta"
+
+#: offers/templates/offer_detail.html:12 offers/templates/offers_index.html:22
+#: offers/templates/offers_index.html:23
+msgid "product name"
+msgstr "nombre de producto"
+
+#: offers/templates/offer_detail.html:15 offers/templates/offers_index.html:25
+#: offers/templates/offers_index.html:26
+msgid "user email"
+msgstr "email del usuario"
+
+#: offers/templates/offer_detail.html:18 offers/templates/offers_index.html:28
+#: offers/templates/offers_index.html:29
+msgid "unit quantity"
+msgstr "cantidad de unidad"
+
+#: offers/templates/offer_detail.html:21 offers/templates/offers_index.html:31
+#: offers/templates/offers_index.html:32
+msgid "unit price"
+msgstr "precio de unidad"
+
+#: offers/templates/offer_detail.html:24 offers/templates/offers_index.html:34
+#: offers/templates/offers_index.html:35
+msgid "date start"
+msgstr "fecha de comienzo"
+
+#: offers/templates/offer_detail.html:27 offers/templates/offers_index.html:37
+#: offers/templates/offers_index.html:38
+msgid "date end"
+msgstr "fecha de finalización"
+
+#: offers/templates/offer_detail.html:30
+msgid "edit"
+msgstr "editar"
+
+#: offers/templates/offer_detail.html:33
+msgid "delete"
+msgstr "borrar"
+
+#: offers/templates/offer_detail.html:36 offers/templates/offers_index.html:16
+msgid "list of offers"
+msgstr "listado de ofertas"
+
+#: offers/templates/offers_index.html:65 offers/templates/offers_index.html:66
+msgid "detail"
+msgstr "detalle"
+
+#: offers/templates/offers_index.html:79 offers/templates/offers_index.html:98
+msgid "new offer"
+msgstr "nueva offerta"
+
+#: products/models.py:39 templates/base.html:19
 msgid "Products"
 msgstr "Productos"
 
@@ -43,8 +239,8 @@ msgid "name"
 msgstr "nombre"
 
 #: products/templates/index.html:17 products/templates/index.html:18
-msgid "category"
-msgstr "categoria"
+msgid "brands"
+msgstr "marcas"
 
 #: products/templates/index.html:20 products/templates/index.html:21
 msgid "varieties"
@@ -66,27 +262,35 @@ msgstr "tallas"
 msgid "calibers"
 msgstr "calibres"
 
-#: templates/base.html:7 templates/base.html:38
+#: templates/base.html:8 templates/base.html:49
 msgid "local commerce"
 msgstr "comercio local"
 
-#: templates/base.html:18
+#: templates/base.html:22
+msgid "Concrete products"
+msgstr "Productos concretos"
+
+#: templates/base.html:25
+msgid "Oferts"
+msgstr "Ofertas"
+
+#: templates/base.html:30
 msgid "Hi"
 msgstr "Hola"
 
-#: templates/base.html:21
+#: templates/base.html:33
 msgid "Log Out"
 msgstr "Salir"
 
-#: templates/base.html:25
+#: templates/base.html:36
 msgid "You are not logged in"
 msgstr "No esta autentificado"
 
-#: templates/base.html:28
+#: templates/base.html:39
 msgid "Log In"
 msgstr "Autentificarse"
 
-#: templates/base.html:31
+#: templates/base.html:42
 msgid "Sign Up"
 msgstr "Registrarse"
 
@@ -142,8 +346,6 @@ msgid "Superuser must have is_superuser=True."
 msgstr "El superusuario tiene que tener is_superuser=True"
 
 #: users/models.py:12
-#, fuzzy
-#| msgid "name"
 msgid "username"
 msgstr "nombre de usuario"
 
@@ -156,8 +358,6 @@ msgid "first_name"
 msgstr "nombre"
 
 #: users/models.py:15
-#, fuzzy
-#| msgid "name"
 msgid "last_name"
 msgstr "apelido"
 
@@ -196,10 +396,6 @@ msgstr "telefono"
 #: users/models.py:23
 msgid "telephone2"
 msgstr "otro telefono"
-
-#: users/models.py:34
-msgid "User"
-msgstr "Usuario"
 
 #: users/models.py:35
 msgid "Users"

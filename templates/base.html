@@ -16,7 +16,13 @@
         </div>
         <ul class="nav nav-pills pull-center">
             <li>
-              <a href="{#% url 'offers_index' %#}">{% trans 'Oferts' %}</a>
+              <a href="{% url 'products_index' %}" class="nav-item nav-link px-3">{% trans 'Products' %}</a>
+            </li>
+            <li>
+                <a href="{% url 'concrete_products_index' %}" class="nav-item nav-link px-3">{% trans 'Concrete products' %}</a>
+            </li>
+            <li>
+              <a href="{% url 'offers_index' %}" class="nav-item nav-link px-3">{% trans 'Oferts' %}</a>
             </li>
         </ul>
         <ul class="nav nav-pills pull-right">

@@ -1,6 +1,6 @@
 from django.contrib import admin
-from .models import Product
+from .models import ConcreteProduct
 
-@admin.register(Product)
+@admin.register(ConcreteProduct)
 class ProductAdmin(admin.ModelAdmin):
     pass
